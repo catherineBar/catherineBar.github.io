@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+	<link  rel="stylesheet" type="text/css" href="createpost.css" />
+	<title>Blog</title>
+</head>
+<body>
+		<div id="contact-form">
+			<div>
+				<h1>Create a Blog Post Here!</h1> 
+				<h4>Please enter in the following information.</h4> 
+			</div>
+			<!-- Form for user to input information about themselves -->
+		   <form class="custForm"  id="custForm"  action="blog_view.php" method="post">
+				<div>
+				  <label>Name:</label> 
+					<input type="text" id="name" name="name" value=""  />
+				</div>
+				<div>
+				  <label>Address:</label> 
+					<input type="text" id="address" name="address" value="" />		   
+				</div>
+				<div>		          
+				  <label>County:</label>
+					<select name="county">
+					<option value = "" ></option>
+					<option value="Allegany"> Allegany</option>
+					<option value="Anne Arundel"> Anne Arundel</option>
+					<option value="Baltimore County"> Baltimore County</option>
+					<option value="Baltimore City"> Baltimore City</option>
+					<option value="Calvert"> Calvert</option>
+					<option value="Caroline"> Caroline</option>
+					<option value="Carroll"> Carroll</option>
+					<option value="Cecil"> Cecil</option>
+					<option value="Charles"> Charles</option>
+					<option value="Dorchester"> Dorchester</option>
+					<option value="Federick"> Federick</option>
+					<option value="Garrett"> Garrett</option>
+					<option value="Harford"> Harford</option>
+					<option value="Howard"> Howard</option>
+					<option value="Kent"> Kent</option>
+					<option value="Montgomery"> Montgomery</option>
+					<option value="Prince George's"> Prince George's</option>
+					<option value="Queen Anne's"> Queen Anne's</option>
+					<option value="Saint Mary's"> Saint Mary's</option>
+					<option value="Somerset"> Sormerset</option>
+					<option value="Talbot"> Talbot</option>
+					<option value="Washington"> Washington</option>
+					<option value="Wicomico"> Wicomico</option>
+					<option value="Worcester"> Worcester</option>
+					</select>
+				</div>
+				<div>
+					<label>Phone Number:</label>
+					<input type="text" id="phoneNumber" name="phoneNumber" value=""/>
+				</div>
+				<!-- Space for the blog entry -->
+				<div>		          
+				  <label>Message: </label>
+					<textarea id="message" name="message" rows="2" cols="20"></textarea> 
+				</div>
+				<!-- submit button -->
+				<div>		           
+				  <button name="submit" type="submit" id="submit" >SEND</button> 
+				</div>
+			</form>
+		</div>
+    </body>
+</html>
