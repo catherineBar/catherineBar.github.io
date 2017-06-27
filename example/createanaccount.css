@@ -3,7 +3,7 @@ html{
    background-size: cover;
    height:100%;
    background-image: url(http://catherineBar.github.io/example/background.jpg);
-}
+}/*this is not working*/
 body {
    font-family: Arial, san-serif;
 }
